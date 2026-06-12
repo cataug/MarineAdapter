@@ -1,14 +1,11 @@
-# ============================================================
-# DATASETS / RAW DATA
-# ============================================================
-FathomNet/
-datasets/
-data/
-raw/
-images/
-downloads/
+# datasets / raw images
+/FathomNet/
+/datasets/
+/data/
+/raw/
+/images/
+/downloads/
 
-# common dataset/image/video files
 *.jpg
 *.jpeg
 *.png
@@ -21,18 +18,12 @@ downloads/
 *.mov
 *.mkv
 
-# allow paper/figure PDFs if any
-!*.pdf
-
-# ============================================================
-# MODELS / WEIGHTS / CHECKPOINTS
-# ============================================================
-MARINE_MODELS/
-models/
-hf_cache/
-checkpoints/
-weights/
-runs*/weights/
+# models / weights
+/MARINE_MODELS/
+/weights/
+/hf_cache/
+/models/
+/checkpoints/
 
 *.pt
 *.pth
@@ -45,9 +36,7 @@ runs*/weights/
 *.pickle
 *.joblib
 
-# ============================================================
-# LARGE ARCHIVES
-# ============================================================
+# archives
 *.zip
 *.tar
 *.tar.gz
@@ -56,9 +45,7 @@ runs*/weights/
 *.7z
 *.gz
 
-# ============================================================
-# PYTHON / NOTEBOOK CACHE
-# ============================================================
+# python / notebooks cache
 __pycache__/
 *.pyc
 *.pyo
@@ -67,94 +54,23 @@ __pycache__/
 .mypy_cache/
 .ruff_cache/
 
-# ============================================================
-# ENVIRONMENTS
-# ============================================================
+# envs
 .venv/
 venv/
 env/
 .env
 *.env
 
-# ============================================================
-# SYSTEM / EDITOR
-# ============================================================
+# system/editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
 
-# ============================================================
-# TEMP
-# ============================================================
+# temp
 tmp/
 temp/
 *.tmp
 *.bak
 *.swp
 nohup.out
-
-# ============================================================
-# KEEP EXPERIMENT LOGS / RESULTS
-# Do not ignore:
-# *.py
-# *.ipynb
-# *.sh
-# *.log
-# *.csv
-# *.json
-# *.txt
-# *.tex
-# ============================================================
-
-# extra model/weight exclusions
-/weights/
-/weights/**
-/clip/
-/clip/**
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.engine
-*.bin
-
-# extra model/weight exclusions
-/weights/
-/weights/**
-/clip/
-/clip/**
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.engine
-*.bin
-
-# extra model/weight exclusions
-/weights/
-/weights/**
-/clip/
-/clip/**
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.engine
-*.bin
-
-# extra model/weight exclusions
-/weights/
-/weights/**
-/clip/
-/clip/**
-*.pt
-*.pth
-*.ckpt
-*.safetensors
-*.onnx
-*.engine
-*.bin
