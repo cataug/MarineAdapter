@@ -145,3 +145,16 @@ nohup.out
 *.onnx
 *.engine
 *.bin
+
+# extra model/weight exclusions
+/weights/
+/weights/**
+/clip/
+/clip/**
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.bin
