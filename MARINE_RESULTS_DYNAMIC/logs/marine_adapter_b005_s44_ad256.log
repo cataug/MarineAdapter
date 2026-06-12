@@ -1,0 +1,101 @@
+[START] 2026-06-11 20:38:14
+JOB: marine_adapter_b005_s44_ad256
+CMD: /home/tahiti/Malashin_Projects/.venv_a100/bin/python /home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py --out_dir /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC --epochs 10 --batch_size 16 --img_size 224 --num_workers 0 --max_classes 30 --max_images_per_class 300 --methods marine_adapter --budgets 0.05 --seeds 44 --adapter_dim 256
+
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:451: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[W611 20:38:18.964119593 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+==========================================================================================
+MARINE ADAPTER EXPERIMENTS
+==========================================================================================
+image_root: /home/tahiti/MARINE_DATASETS/FathomNet/images
+out_dir: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC
+torch: 2.5.1+cu121
+cuda: True
+torchvision_ok: True
+device: cuda
+
+Classes: 17
+000: Asthenactis_fisheri | n=100
+001: Benthoctopus | n=13
+002: Benthoctopus_sp._1 | n=8
+003: Coralliidae | n=100
+004: Corallimorpharia | n=27
+005: Corallimorphidae | n=15
+006: Corallimorphus | n=59
+007: Corallimorphus_cf._pilatus | n=15
+008: Corallimorphus_pilatus | n=100
+009: Corallimorphus_rigidus | n=6
+010: black_coral | n=100
+011: bony_fish | n=100
+012: brittle_star | n=100
+013: coral | n=100
+014: coral_skeleton | n=100
+015: coral_transplant_container | n=10
+016: corallimorph | n=100
+
+Split:
+train: 734
+val  : 155
+test : 164
+
+Methods: ['marine_adapter']
+Budgets: [0.05]
+Seeds: [44]
+
+==========================================================================================
+METHOD=marine_adapter | BUDGET=0.05 | SEED=44
+train=46 val=155 test=164 classes=17
+params_total=11,449,169
+params_trainable=272,657
+==========================================================================================
+epoch 001/10 | train loss=3.0000 acc=0.0435 | val loss=2.8874 acc=0.1226 macroF1=0.0501 balAcc=0.0745
+epoch 002/10 | train loss=2.7620 acc=0.0652 | val loss=2.7289 acc=0.1548 macroF1=0.0639 balAcc=0.0941
+epoch 003/10 | train loss=2.5986 acc=0.0652 | val loss=2.5953 acc=0.1613 macroF1=0.0663 balAcc=0.0980
+epoch 004/10 | train loss=2.4052 acc=0.1957 | val loss=2.5182 acc=0.1548 macroF1=0.0670 balAcc=0.0941
+epoch 005/10 | train loss=2.2149 acc=0.3913 | val loss=2.4784 acc=0.1677 macroF1=0.0764 balAcc=0.1020
+epoch 006/10 | train loss=2.1054 acc=0.4130 | val loss=2.4534 acc=0.1871 macroF1=0.0917 balAcc=0.1137
+epoch 007/10 | train loss=2.1285 acc=0.4565 | val loss=2.4453 acc=0.2065 macroF1=0.1037 balAcc=0.1255
+epoch 008/10 | train loss=2.1013 acc=0.3043 | val loss=2.4381 acc=0.2065 macroF1=0.1037 balAcc=0.1255
+epoch 009/10 | train loss=2.0457 acc=0.3696 | val loss=2.4369 acc=0.1935 macroF1=0.0951 balAcc=0.1176
+epoch 010/10 | train loss=1.9427 acc=0.5217 | val loss=2.4401 acc=0.1871 macroF1=0.0910 balAcc=0.1137
+
+RESULT:
+method: marine_adapter
+budget: 0.05
+budget_percent: 5
+seed: 44
+epochs: 10
+best_epoch: 7
+num_classes: 17
+n_train: 46
+n_val: 155
+n_test: 164
+img_size: 224
+batch_size: 16
+adapter_dim: 256
+dropout: 0.1
+pretrained: True
+params_total: 11449169
+params_trainable: 272657
+test_loss: 2.489225248011147
+test_acc: 0.17682926829268292
+test_macro_f1: 0.10717295488032703
+test_balanced_acc: 0.11568627450979602
+time_sec: 153.20159125328064
+time_human: 2m 33s
+
+Saved: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+==========================================================================================
+DONE
+==========================================================================================
+
+Final results:
+marine_adapter       budget=  5% acc=0.1768 macroF1=0.1072 balAcc=0.1157 trainable=272657
+
+Saved to: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+[DONE] 2026-06-11 20:40:51

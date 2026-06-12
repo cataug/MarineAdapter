@@ -1,0 +1,101 @@
+[START] 2026-06-11 19:45:37
+JOB: linear_probe_b100_s42_ad128
+CMD: /home/tahiti/Malashin_Projects/.venv_a100/bin/python /home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py --out_dir /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC --epochs 10 --batch_size 16 --img_size 224 --num_workers 0 --max_classes 30 --max_images_per_class 300 --methods linear_probe --budgets 1.0 --seeds 42 --adapter_dim 128
+
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:451: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[W611 19:45:42.328745497 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+==========================================================================================
+MARINE ADAPTER EXPERIMENTS
+==========================================================================================
+image_root: /home/tahiti/MARINE_DATASETS/FathomNet/images
+out_dir: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC
+torch: 2.5.1+cu121
+cuda: True
+torchvision_ok: True
+device: cuda
+
+Classes: 17
+000: Asthenactis_fisheri | n=100
+001: Benthoctopus | n=13
+002: Benthoctopus_sp._1 | n=8
+003: Coralliidae | n=100
+004: Corallimorpharia | n=27
+005: Corallimorphidae | n=15
+006: Corallimorphus | n=59
+007: Corallimorphus_cf._pilatus | n=15
+008: Corallimorphus_pilatus | n=100
+009: Corallimorphus_rigidus | n=6
+010: black_coral | n=100
+011: bony_fish | n=100
+012: brittle_star | n=100
+013: coral | n=100
+014: coral_skeleton | n=100
+015: coral_transplant_container | n=10
+016: corallimorph | n=100
+
+Split:
+train: 734
+val  : 155
+test : 164
+
+Methods: ['linear_probe']
+Budgets: [1.0]
+Seeds: [42]
+
+==========================================================================================
+METHOD=linear_probe | BUDGET=1.0 | SEED=42
+train=734 val=155 test=164 classes=17
+params_total=11,185,233
+params_trainable=8,721
+==========================================================================================
+epoch 001/10 | train loss=2.5775 acc=0.1499 | val loss=2.3219 acc=0.2710 macroF1=0.1400 balAcc=0.1647
+epoch 002/10 | train loss=2.2997 acc=0.2793 | val loss=2.1172 acc=0.3806 macroF1=0.2150 balAcc=0.2348
+epoch 003/10 | train loss=2.1180 acc=0.3624 | val loss=1.9545 acc=0.4452 macroF1=0.2410 balAcc=0.2740
+epoch 004/10 | train loss=1.9835 acc=0.4319 | val loss=1.8608 acc=0.5161 macroF1=0.2874 balAcc=0.3206
+epoch 005/10 | train loss=1.9068 acc=0.4373 | val loss=1.7843 acc=0.5161 macroF1=0.2911 balAcc=0.3172
+epoch 006/10 | train loss=1.8187 acc=0.4837 | val loss=1.7309 acc=0.5161 macroF1=0.2951 balAcc=0.3172
+epoch 007/10 | train loss=1.7867 acc=0.4891 | val loss=1.6935 acc=0.5419 macroF1=0.3215 balAcc=0.3397
+epoch 008/10 | train loss=1.7701 acc=0.5014 | val loss=1.6815 acc=0.5613 macroF1=0.3348 balAcc=0.3515
+epoch 009/10 | train loss=1.7462 acc=0.5313 | val loss=1.6910 acc=0.5290 macroF1=0.3016 balAcc=0.3250
+epoch 010/10 | train loss=1.7256 acc=0.5177 | val loss=1.6727 acc=0.5548 macroF1=0.3273 balAcc=0.3475
+
+RESULT:
+method: linear_probe
+budget: 1.0
+budget_percent: 100
+seed: 42
+epochs: 10
+best_epoch: 8
+num_classes: 17
+n_train: 734
+n_val: 155
+n_test: 164
+img_size: 224
+batch_size: 16
+adapter_dim: 
+dropout: 
+pretrained: True
+params_total: 11185233
+params_trainable: 8721
+test_loss: 1.8922387099847562
+test_acc: 0.4817073170731707
+test_macro_f1: 0.27442702649999556
+test_balanced_acc: 0.31176470588233196
+time_sec: 674.9856245517731
+time_human: 11m 14s
+
+Saved: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+==========================================================================================
+DONE
+==========================================================================================
+
+Final results:
+linear_probe         budget=100% acc=0.4817 macroF1=0.2744 balAcc=0.3118 trainable=8721
+
+Saved to: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+[DONE] 2026-06-11 19:56:56

@@ -1,0 +1,2 @@
+method,budget,budget_percent,seed,epochs,best_epoch,num_classes,n_train,n_val,n_test,img_size,batch_size,adapter_dim,dropout,pretrained,params_total,params_trainable,test_loss,test_acc,test_macro_f1,test_balanced_acc,time_sec,time_human
+linear_probe,0.1,10,42,2,2,10,59,116,118,224,16,,,True,11181642,5130,2.526609214685731,0.11016949152542373,0.05011488158347075,0.10833333333332432,34.365976095199585,34s

@@ -1,0 +1,38 @@
+{
+  "n_images": 1039,
+  "n_classes": 15,
+  "labels": [
+    "Asthenactis fisheri",
+    "Benthoctopus",
+    "Coralliidae",
+    "Corallimorpharia",
+    "Corallimorphidae",
+    "Corallimorphus",
+    "Corallimorphus cf. pilatus",
+    "Corallimorphus pilatus",
+    "black coral",
+    "bony fish",
+    "brittle star",
+    "coral",
+    "coral skeleton",
+    "coral transplant container",
+    "corallimorph"
+  ],
+  "counts": {
+    "Asthenactis fisheri": 100,
+    "Coralliidae": 100,
+    "Corallimorphus pilatus": 100,
+    "black coral": 100,
+    "bony fish": 100,
+    "brittle star": 100,
+    "coral": 100,
+    "coral skeleton": 100,
+    "corallimorph": 100,
+    "Corallimorphus": 59,
+    "Corallimorpharia": 27,
+    "Corallimorphidae": 15,
+    "Corallimorphus cf. pilatus": 15,
+    "Benthoctopus": 13,
+    "coral transplant container": 10
+  }
+}

@@ -1,0 +1,101 @@
+[START] 2026-06-11 20:09:58
+JOB: finetune_resnet18_b005_s43_ad128
+CMD: /home/tahiti/Malashin_Projects/.venv_a100/bin/python /home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py --out_dir /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC --epochs 10 --batch_size 16 --img_size 224 --num_workers 0 --max_classes 30 --max_images_per_class 300 --methods finetune_resnet18 --budgets 0.05 --seeds 43 --adapter_dim 128
+
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:451: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[W611 20:10:02.361844058 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+==========================================================================================
+MARINE ADAPTER EXPERIMENTS
+==========================================================================================
+image_root: /home/tahiti/MARINE_DATASETS/FathomNet/images
+out_dir: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC
+torch: 2.5.1+cu121
+cuda: True
+torchvision_ok: True
+device: cuda
+
+Classes: 17
+000: Asthenactis_fisheri | n=100
+001: Benthoctopus | n=13
+002: Benthoctopus_sp._1 | n=8
+003: Coralliidae | n=100
+004: Corallimorpharia | n=27
+005: Corallimorphidae | n=15
+006: Corallimorphus | n=59
+007: Corallimorphus_cf._pilatus | n=15
+008: Corallimorphus_pilatus | n=100
+009: Corallimorphus_rigidus | n=6
+010: black_coral | n=100
+011: bony_fish | n=100
+012: brittle_star | n=100
+013: coral | n=100
+014: coral_skeleton | n=100
+015: coral_transplant_container | n=10
+016: corallimorph | n=100
+
+Split:
+train: 734
+val  : 155
+test : 164
+
+Methods: ['finetune_resnet18']
+Budgets: [0.05]
+Seeds: [43]
+
+==========================================================================================
+METHOD=finetune_resnet18 | BUDGET=0.05 | SEED=43
+train=46 val=155 test=164 classes=17
+params_total=11,185,233
+params_trainable=11,185,233
+==========================================================================================
+epoch 001/10 | train loss=3.0981 acc=0.1304 | val loss=2.6040 acc=0.2387 macroF1=0.1322 balAcc=0.1740
+epoch 002/10 | train loss=1.4031 acc=0.6522 | val loss=2.3231 acc=0.3290 macroF1=0.2029 balAcc=0.2392
+epoch 003/10 | train loss=0.6673 acc=0.8913 | val loss=2.2105 acc=0.3806 macroF1=0.2383 balAcc=0.2706
+epoch 004/10 | train loss=0.3954 acc=0.9565 | val loss=2.1746 acc=0.3742 macroF1=0.2468 balAcc=0.2667
+epoch 005/10 | train loss=0.2841 acc=0.9348 | val loss=2.1544 acc=0.3613 macroF1=0.2435 balAcc=0.2588
+epoch 006/10 | train loss=0.1727 acc=0.9783 | val loss=2.1174 acc=0.3806 macroF1=0.2506 balAcc=0.2706
+epoch 007/10 | train loss=0.1186 acc=1.0000 | val loss=2.1108 acc=0.3935 macroF1=0.2570 balAcc=0.2750
+epoch 008/10 | train loss=0.1264 acc=1.0000 | val loss=2.0965 acc=0.4065 macroF1=0.2634 balAcc=0.2828
+epoch 009/10 | train loss=0.1290 acc=1.0000 | val loss=2.0880 acc=0.4065 macroF1=0.2669 balAcc=0.2828
+epoch 010/10 | train loss=0.0807 acc=1.0000 | val loss=2.0831 acc=0.4129 macroF1=0.2744 balAcc=0.2868
+
+RESULT:
+method: finetune_resnet18
+budget: 0.05
+budget_percent: 5
+seed: 43
+epochs: 10
+best_epoch: 10
+num_classes: 17
+n_train: 46
+n_val: 155
+n_test: 164
+img_size: 224
+batch_size: 16
+adapter_dim: 
+dropout: 
+pretrained: True
+params_total: 11185233
+params_trainable: 11185233
+test_loss: 2.0668806855271504
+test_acc: 0.40853658536585363
+test_macro_f1: 0.33899966806037307
+test_balanced_acc: 0.3647058823528434
+time_sec: 145.41458415985107
+time_human: 2m 25s
+
+Saved: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+==========================================================================================
+DONE
+==========================================================================================
+
+Final results:
+finetune_resnet18    budget=  5% acc=0.4085 macroF1=0.3390 balAcc=0.3647 trainable=11185233
+
+Saved to: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+[DONE] 2026-06-11 20:12:27

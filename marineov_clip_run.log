@@ -1,0 +1,57 @@
+====================================================================================================
+MarineOV CLIP experiment v002
+====================================================================================================
+DATA_ROOT : /home/tahiti/MARINE_DATASETS/FathomNet/images
+MODEL_ROOT: /home/tahiti/MARINE_DATASETS/MARINE_MODELS
+OUT_ROOT  : /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS/marineov_clip_v002
+DEVICE    : cpu
+MKLDNN    : False
+====================================================================================================
+
+Dataset:
+images : 1039
+classes: 15
+label
+Asthenactis fisheri           100
+Coralliidae                   100
+Corallimorphus pilatus        100
+black coral                   100
+bony fish                     100
+brittle star                  100
+coral                         100
+coral skeleton                100
+corallimorph                  100
+Corallimorphus                 59
+Corallimorpharia               27
+Corallimorphidae               15
+Corallimorphus cf. pilatus     15
+Benthoctopus                   13
+coral transplant container     10
+
+Splits:
+train: 727
+val  : 156
+test : 156
+
+====================================================================================================
+MODEL: clip_vit_base
+PATH : /home/tahiti/MARINE_DATASETS/MARINE_MODELS/clip_vit_base
+====================================================================================================
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 36600.15it/s]
+[W611 11:38:25.460987066 NNPACK.cpp:56] Could not initialize NNPACK! Reason: Unsupported hardware.
+
+Encoding clip_vit_base/train: 727 images
+Traceback (most recent call last):
+  File "/home/tahiti/MARINE_DATASETS/run_marineov_clip_experiment.py", line 430, in <module>
+    X_train, y_train, _ = encode_images_one_by_one(model, processor, train_df, model_name, "train")
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tahiti/Malashin_Projects/.venv_a100/lib/python3.12/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tahiti/MARINE_DATASETS/run_marineov_clip_experiment.py", line 258, in encode_images_one_by_one
+    feats = F.normalize(feats, dim=-1)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/tahiti/Malashin_Projects/.venv_a100/lib/python3.12/site-packages/torch/nn/functional.py", line 5739, in normalize
+    denom = input.norm(p, dim, keepdim=True).clamp_min(eps).expand_as(input)
+            ^^^^^^^^^^
+AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'

@@ -1,0 +1,50 @@
+{
+  "class_names": [
+    "Asthenactis_fisheri",
+    "Coralliidae",
+    "Corallimorphus",
+    "Corallimorphus_pilatus",
+    "black_coral",
+    "bony_fish",
+    "brittle_star",
+    "coral",
+    "coral_skeleton",
+    "corallimorph"
+  ],
+  "class_to_idx": {
+    "Asthenactis_fisheri": 0,
+    "Coralliidae": 1,
+    "Corallimorphus": 2,
+    "Corallimorphus_pilatus": 3,
+    "black_coral": 4,
+    "bony_fish": 5,
+    "brittle_star": 6,
+    "coral": 7,
+    "coral_skeleton": 8,
+    "corallimorph": 9
+  },
+  "n_classes": 10,
+  "n_train_full": 545,
+  "n_val": 116,
+  "n_test": 118,
+  "args": {
+    "image_root": "/home/tahiti/MARINE_DATASETS/FathomNet/images",
+    "out_dir": "/home/tahiti/MARINE_DATASETS/MARINE_RESULTS",
+    "epochs": 2,
+    "batch_size": 16,
+    "img_size": 224,
+    "num_workers": 0,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "adapter_dim": 128,
+    "dropout": 0.1,
+    "min_images_per_class": 5,
+    "max_classes": 10,
+    "max_images_per_class": 80,
+    "methods": "linear_probe",
+    "budgets": "0.10",
+    "seeds": "42",
+    "no_pretrained": false,
+    "amp": false
+  }
+}

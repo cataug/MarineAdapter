@@ -1,0 +1,121 @@
+# ============================================================
+# DATASETS / RAW DATA
+# ============================================================
+FathomNet/
+datasets/
+data/
+raw/
+images/
+downloads/
+
+# common dataset/image/video files
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# allow paper/figure PDFs if any
+!*.pdf
+
+# ============================================================
+# MODELS / WEIGHTS / CHECKPOINTS
+# ============================================================
+MARINE_MODELS/
+models/
+hf_cache/
+checkpoints/
+weights/
+runs*/weights/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.bin
+*.pkl
+*.pickle
+*.joblib
+
+# ============================================================
+# LARGE ARCHIVES
+# ============================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+
+# ============================================================
+# PYTHON / NOTEBOOK CACHE
+# ============================================================
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ============================================================
+# ENVIRONMENTS
+# ============================================================
+.venv/
+venv/
+env/
+.env
+*.env
+
+# ============================================================
+# SYSTEM / EDITOR
+# ============================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ============================================================
+# TEMP
+# ============================================================
+tmp/
+temp/
+*.tmp
+*.bak
+*.swp
+nohup.out
+
+# ============================================================
+# KEEP EXPERIMENT LOGS / RESULTS
+# Do not ignore:
+# *.py
+# *.ipynb
+# *.sh
+# *.log
+# *.csv
+# *.json
+# *.txt
+# *.tex
+# ============================================================
+
+# extra model/weight exclusions
+/weights/
+/weights/**
+/clip/
+/clip/**
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.engine
+*.bin

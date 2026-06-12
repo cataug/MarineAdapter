@@ -1,0 +1,2 @@
+method,budget,budget_percent,seed,epochs,best_epoch,num_classes,n_train,n_val,n_test,img_size,batch_size,adapter_dim,dropout,pretrained,params_total,params_trainable,test_loss,test_acc,test_macro_f1,test_balanced_acc,time_sec,time_human
+finetune_resnet18,1.0,100,44,10,7,17,734,155,164,224,16,,,True,11185233,11185233,1.1172273911354018,0.6890243902439024,0.6242572187310701,0.6294117647057271,673.3297834396362,11m 13s

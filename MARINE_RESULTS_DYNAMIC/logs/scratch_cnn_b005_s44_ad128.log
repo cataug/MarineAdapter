@@ -1,0 +1,101 @@
+[START] 2026-06-11 20:34:34
+JOB: scratch_cnn_b005_s44_ad128
+CMD: /home/tahiti/Malashin_Projects/.venv_a100/bin/python /home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py --out_dir /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC --epochs 10 --batch_size 16 --img_size 224 --num_workers 0 --max_classes 30 --max_images_per_class 300 --methods scratch_cnn --budgets 0.05 --seeds 44 --adapter_dim 128
+
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:451: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=amp)
+/home/tahiti/MARINE_DATASETS/run_marine_adapter_experiments.py:459: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=amp):
+[W611 20:34:38.490557672 NNPACK.cpp:61] Could not initialize NNPACK! Reason: Unsupported hardware.
+==========================================================================================
+MARINE ADAPTER EXPERIMENTS
+==========================================================================================
+image_root: /home/tahiti/MARINE_DATASETS/FathomNet/images
+out_dir: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC
+torch: 2.5.1+cu121
+cuda: True
+torchvision_ok: True
+device: cuda
+
+Classes: 17
+000: Asthenactis_fisheri | n=100
+001: Benthoctopus | n=13
+002: Benthoctopus_sp._1 | n=8
+003: Coralliidae | n=100
+004: Corallimorpharia | n=27
+005: Corallimorphidae | n=15
+006: Corallimorphus | n=59
+007: Corallimorphus_cf._pilatus | n=15
+008: Corallimorphus_pilatus | n=100
+009: Corallimorphus_rigidus | n=6
+010: black_coral | n=100
+011: bony_fish | n=100
+012: brittle_star | n=100
+013: coral | n=100
+014: coral_skeleton | n=100
+015: coral_transplant_container | n=10
+016: corallimorph | n=100
+
+Split:
+train: 734
+val  : 155
+test : 164
+
+Methods: ['scratch_cnn']
+Budgets: [0.05]
+Seeds: [44]
+
+==========================================================================================
+METHOD=scratch_cnn | BUDGET=0.05 | SEED=44
+train=46 val=155 test=164 classes=17
+params_total=393,745
+params_trainable=393,745
+==========================================================================================
+epoch 001/10 | train loss=2.7578 acc=0.1087 | val loss=2.8122 acc=0.1226 macroF1=0.0435 balAcc=0.0745
+epoch 002/10 | train loss=2.3600 acc=0.4348 | val loss=2.8026 acc=0.1613 macroF1=0.0437 balAcc=0.0980
+epoch 003/10 | train loss=2.2337 acc=0.3261 | val loss=2.7916 acc=0.1355 macroF1=0.0376 balAcc=0.0824
+epoch 004/10 | train loss=2.0692 acc=0.4348 | val loss=2.7787 acc=0.1355 macroF1=0.0433 balAcc=0.0858
+epoch 005/10 | train loss=1.9288 acc=0.5435 | val loss=2.7684 acc=0.1484 macroF1=0.0470 balAcc=0.0936
+epoch 006/10 | train loss=1.9085 acc=0.4783 | val loss=2.7595 acc=0.1742 macroF1=0.0683 balAcc=0.1093
+epoch 007/10 | train loss=1.8824 acc=0.4565 | val loss=2.7367 acc=0.1677 macroF1=0.0682 balAcc=0.1054
+epoch 008/10 | train loss=1.9044 acc=0.4130 | val loss=2.7114 acc=0.1871 macroF1=0.0763 balAcc=0.1137
+epoch 009/10 | train loss=1.8271 acc=0.5000 | val loss=2.6771 acc=0.2000 macroF1=0.0884 balAcc=0.1250
+epoch 010/10 | train loss=1.7959 acc=0.4565 | val loss=2.6412 acc=0.2000 macroF1=0.0953 balAcc=0.1250
+
+RESULT:
+method: scratch_cnn
+budget: 0.05
+budget_percent: 5
+seed: 44
+epochs: 10
+best_epoch: 10
+num_classes: 17
+n_train: 46
+n_val: 155
+n_test: 164
+img_size: 224
+batch_size: 16
+adapter_dim: 
+dropout: 
+pretrained: True
+params_total: 393745
+params_trainable: 393745
+test_loss: 2.610927360813792
+test_acc: 0.22560975609756098
+test_macro_f1: 0.09804485627253415
+test_balanced_acc: 0.1450980392156766
+time_sec: 147.0901975631714
+time_human: 2m 27s
+
+Saved: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+==========================================================================================
+DONE
+==========================================================================================
+
+Final results:
+scratch_cnn          budget=  5% acc=0.2256 macroF1=0.0980 balAcc=0.1451 trainable=393745
+
+Saved to: /home/tahiti/MARINE_DATASETS/MARINE_RESULTS_DYNAMIC/all_results.csv
+
+[DONE] 2026-06-11 20:37:04
