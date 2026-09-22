@@ -1,4 +1,4 @@
-**Empirical analysis of pretrained visual adaptation for label-efficient underwater and marine image recognition.**
+# Empirical analysis of pretrained visual adaptation for label-efficient underwater and marine image recognition.**
 
 MarineAdapter started as a compact residual feature adapter for frozen pretrained visual encoders. The project has since grown into a controlled empirical study of a broader question:
 
