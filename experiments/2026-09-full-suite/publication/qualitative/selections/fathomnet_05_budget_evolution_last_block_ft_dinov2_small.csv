@@ -1,0 +1,9 @@
+dataset,backbone,method,index,path,ground_truth,001_pred,001_correct,005_pred,005_correct,010_pred,010_correct,100_pred,100_correct
+fathomnet,dinov2_small,last_block_ft,3380,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8926_23592.png,Actinopterygii,class 26,0,class 5,0,class 76,0,class 23,0
+fathomnet,dinov2_small,last_block_ft,3367,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8897_23485.png,Actinopterygii,class 18,0,class 40,0,class 1,0,class 5,0
+fathomnet,dinov2_small,last_block_ft,3364,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8897_23482.png,Actinopterygii,class 13,0,class 0,0,class 26,0,class 5,0
+fathomnet,dinov2_small,last_block_ft,3361,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8866_23416.png,Corallimorphus pilatus,class 20,0,class 11,0,class 28,0,class 58,0
+fathomnet,dinov2_small,last_block_ft,3358,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8866_23413.png,Corallimorphus pilatus,class 1,0,class 75,0,class 11,0,class 17,0
+fathomnet,dinov2_small,last_block_ft,3356,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8866_23411.png,Corallimorphus pilatus,class 10,0,class 73,0,class 11,0,class 17,0
+fathomnet,dinov2_small,last_block_ft,3339,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8853_23376.png,Ophiacanthidae,class 10,0,class 63,0,class 46,0,class 47,0
+fathomnet,dinov2_small,last_block_ft,3336,/home/tahiti/MARINE_DATASETS/FathomNet_FGVC2025/data/rois/8835_23351.png,Ophiacanthidae,class 33,0,class 12,0,class 55,0,class 47,0

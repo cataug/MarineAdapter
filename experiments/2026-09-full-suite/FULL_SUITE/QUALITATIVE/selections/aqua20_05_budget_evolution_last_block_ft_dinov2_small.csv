@@ -1,0 +1,9 @@
+dataset,backbone,method,index,path,ground_truth,001_pred,001_correct,005_pred,005_correct,010_pred,010_correct,100_pred,100_correct
+aqua20,dinov2_small,last_block_ft,1142,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/12_seaCucumber/test_001405_f9d88b47d8e4.jpg,seaCucumber,coral,0,starfish,0,eel,0,seaCucumber,0
+aqua20,dinov2_small,last_block_ft,1139,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/12_seaCucumber/test_001402_b7fbdc6f9c3c.jpg,seaCucumber,coral,0,rayfish,0,eel,0,seaCucumber,0
+aqua20,dinov2_small,last_block_ft,1094,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/09_octopus/test_001071_42481a596016.jpg,octopus,fish,0,rayfish,0,turtle,0,octopus,0
+aqua20,dinov2_small,last_block_ft,893,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/val/06_flatworm/train_004290_2a735ed6d07d.jpg,flatworm,seaAnemone,0,coral,0,seaSlug,0,flatworm,0
+aqua20,dinov2_small,last_block_ft,737,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/16_shrimp/train_006063_bc5cbd156ef2.jpg,shrimp,seaAnemone,0,fish,0,crab,0,shrimp,0
+aqua20,dinov2_small,last_block_ft,736,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/16_shrimp/train_006062_689bfeeaeae7.jpg,shrimp,coral,0,fish,0,crab,0,shrimp,0
+aqua20,dinov2_small,last_block_ft,724,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/15_shark/train_005982_34eb32d7e5fc.jpg,shark,fish,0,eel,0,fishInGroups,0,marine_dolphin,0
+aqua20,dinov2_small,last_block_ft,694,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/12_seaCucumber/train_005760_e4b06c3af390.jpg,seaCucumber,seaAnemone,0,starfish,0,seaSlug,0,seaCucumber,0

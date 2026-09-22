@@ -1,0 +1,43 @@
+core conditions with prediction files: 80
+
+[1] DATASET OVERVIEWS
+ overview: aqua20
+ overview: fathomnet
+
+[2] METHOD COMPARISONS
+aqua20 resnet18 010
+NO EXAMPLES: aqua20 resnet18 010 02_adapter_rescues_linear
+NO EXAMPLES: aqua20 resnet18 010 03_mlp_rescues_adapter
+NO EXAMPLES: aqua20 resnet18 010 04_deeper_adaptation_rescues
+aqua20 dinov2_small 010
+NO EXAMPLES: aqua20 dinov2_small 010 02_adapter_rescues_linear
+NO EXAMPLES: aqua20 dinov2_small 010 03_mlp_rescues_adapter
+NO EXAMPLES: aqua20 dinov2_small 010 04_deeper_adaptation_rescues
+fathomnet resnet18 010
+NO EXAMPLES: fathomnet resnet18 010 02_adapter_rescues_linear
+NO EXAMPLES: fathomnet resnet18 010 03_mlp_rescues_adapter
+NO EXAMPLES: fathomnet resnet18 010 04_deeper_adaptation_rescues
+fathomnet dinov2_small 010
+NO EXAMPLES: fathomnet dinov2_small 010 02_adapter_rescues_linear
+NO EXAMPLES: fathomnet dinov2_small 010 03_mlp_rescues_adapter
+NO EXAMPLES: fathomnet dinov2_small 010 04_deeper_adaptation_rescues
+
+[3] FULL-BUDGET DISAGREEMENT
+
+[4] BUDGET EVOLUTION
+ evolution: aqua20 resnet18 mlp_head
+ evolution: aqua20 resnet18 last_block_ft
+ evolution: aqua20 dinov2_small mlp_head
+ evolution: aqua20 dinov2_small last_block_ft
+ evolution: fathomnet resnet18 mlp_head
+ evolution: fathomnet resnet18 last_block_ft
+ evolution: fathomnet dinov2_small mlp_head
+ evolution: fathomnet dinov2_small last_block_ft
+
+======================================================================================
+QUALITATIVE GENERATION COMPLETE
+======================================================================================
+OUTPUT: /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/QUALITATIVE
+/home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/QUALITATIVE/AQUA20 files= 18
+/home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/QUALITATIVE/FathomNet files= 18
+/home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/QUALITATIVE/selections files= 16

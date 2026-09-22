@@ -1,0 +1,16 @@
+================================================================================
+QUANTITATIVE FIGURES COMPLETE
+OUTPUT: /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/FIGURES_NEW/QUANTITATIVE
+================================================================================
+15_cross_condition_effects.pdf
+15_cross_condition_effects.png
+16_pairwise_dominance_matrix.pdf
+16_pairwise_dominance_matrix.png
+17_parameter_efficiency_frontier.pdf
+17_parameter_efficiency_frontier.png
+18_budget_response_curves.pdf
+18_budget_response_curves.png
+19_seed_variability_landscape.pdf
+19_seed_variability_landscape.png
+20_kshot_sample_efficiency.pdf
+20_kshot_sample_efficiency.png

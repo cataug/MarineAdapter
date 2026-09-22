@@ -1,0 +1,9 @@
+dataset,backbone,method,index,path,ground_truth,001_pred,001_correct,005_pred,005_correct,010_pred,010_correct,100_pred,100_correct
+aqua20,dinov2_small,mlp_head,1141,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/12_seaCucumber/test_001404_5ecf35e555ca.jpg,seaCucumber,fish,0,coral,0,seaAnemone,0,seaCucumber,0
+aqua20,dinov2_small,mlp_head,911,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/val/11_seaAnemone/train_004969_5bbdb312e687.jpg,seaAnemone,fish,0,seaAnemone,0,coral,0,starfish,0
+aqua20,dinov2_small,mlp_head,186,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/01_crab/train_001573_61cd539cc771.jpg,crab,fish,0,rayfish,0,turtle,0,crab,0
+aqua20,dinov2_small,mlp_head,185,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/01_crab/train_001564_e2e2fabee151.jpg,crab,fish,0,coral,0,turtle,0,crab,0
+aqua20,dinov2_small,mlp_head,1157,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/18_starfish/test_001527_e19754ee7b1e.jpg,starfish,fish,0,seaAnemone,0,starfish,0,starfish,0
+aqua20,dinov2_small,mlp_head,1156,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/18_starfish/test_001511_4f83d944b96e.jpg,starfish,fish,0,coral,0,starfish,0,starfish,0
+aqua20,dinov2_small,mlp_head,1153,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/18_starfish/test_001496_4eeb80d3ed9f.jpg,starfish,fish,0,coral,0,starfish,0,starfish,0
+aqua20,dinov2_small,mlp_head,1151,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/16_shrimp/test_001479_375ab418f07b.jpg,shrimp,fish,0,fish,0,rayfish,0,shrimp,0

@@ -1,0 +1,9 @@
+dataset,backbone,method,index,path,ground_truth,001_pred,001_correct,005_pred,005_correct,010_pred,010_correct,100_pred,100_correct
+aqua20,resnet18,mlp_head,1082,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/05_fishInGroups/test_000973_6fac60986e8a.jpg,fishInGroups,fish,0,coral,0,seaAnemone,0,fishInGroups,0
+aqua20,resnet18,mlp_head,172,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/train/00_coral/train_001452_1e1b04bf8093.jpg,coral,fish,0,coral,0,seaAnemone,0,seaUrchin,0
+aqua20,resnet18,mlp_head,1164,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/19_turtle/test_001592_fd9935ac5cbd.jpg,turtle,fish,0,fish,0,rayfish,0,turtle,0
+aqua20,resnet18,mlp_head,1156,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/18_starfish/test_001511_4f83d944b96e.jpg,starfish,fish,0,coral,0,coral,0,starfish,0
+aqua20,resnet18,mlp_head,1153,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/18_starfish/test_001496_4eeb80d3ed9f.jpg,starfish,fish,0,coral,0,coral,0,starfish,0
+aqua20,resnet18,mlp_head,1146,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/14_seaUrchin/test_001431_31c9c92632d8.jpg,seaUrchin,coral,0,seaAnemone,0,seaAnemone,0,seaUrchin,0
+aqua20,resnet18,mlp_head,1145,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/14_seaUrchin/test_001429_ed9ba068acaa.jpg,seaUrchin,fish,0,coral,0,seaUrchin,0,seaUrchin,0
+aqua20,resnet18,mlp_head,1143,/home/tahiti/MARINE_DATASETS/AQUA20_PREPARED/images/test/13_seaSlug/test_001408_790ad06f671b.jpg,seaSlug,fish,0,coral,0,coral,0,seaSlug,0

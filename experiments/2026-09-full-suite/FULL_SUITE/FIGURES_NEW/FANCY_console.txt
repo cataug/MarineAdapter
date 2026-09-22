@@ -1,0 +1,26 @@
+WROTE FANCY FIGURES TO: /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/FIGURES_NEW/FANCY
+09_best_method_map.pdf
+09_best_method_map.png
+10_delta_heatmaps.pdf
+10_delta_heatmaps.png
+11_pareto_tradeoff_budget100.pdf
+11_pareto_tradeoff_budget100.png
+12_average_rank_bars.pdf
+12_average_rank_bars.png
+13_contrast_by_budget.pdf
+13_contrast_by_budget.png
+14_performance_landscape.pdf
+14_performance_landscape.png
+WROTE FANCY FIGURES TO: /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/FIGURES_NEW/FANCY
+09_best_method_map.pdf
+09_best_method_map.png
+10_delta_heatmaps.pdf
+10_delta_heatmaps.png
+11_pareto_tradeoff_budget100.pdf
+11_pareto_tradeoff_budget100.png
+12_average_rank_bars.pdf
+12_average_rank_bars.png
+13_contrast_by_budget.pdf
+13_contrast_by_budget.png
+14_performance_landscape.pdf
+14_performance_landscape.png

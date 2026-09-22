@@ -74,3 +74,38 @@ temp/
 *.bak
 *.swp
 nohup.out
+
+# ------------------------------------------------------------------
+# MarineAdapter datasets / models / heavy experiment artifacts
+# ------------------------------------------------------------------
+data/
+datasets/
+raw/
+images/
+models/
+weights/
+checkpoints/
+checkpoint/
+
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+*.avi
+*.mp4
+
+*.parquet
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+__pycache__/
+*.pyc
+
+# Local environments
+.venv/
+venv/
+.env/

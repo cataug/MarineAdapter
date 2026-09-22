@@ -1,0 +1,291 @@
+==========================================================================================
+FULL SUITE AUDIT
+==========================================================================================
+TOTAL: 579
+STATUS: Counter({'complete': 579})
+STAGE: Counter({'core': 400, 'shots': 60, 'sensitivity': 54, 'scratch': 40, 'width': 20, 'preflight': 5})
+SCIENTIFIC RUNS: 574
+
+==========================================================================================
+CORE
+==========================================================================================
+rows: 400
+
+CORE MACRO-F1: mean ± SD [95% bootstrap CI]
+
+
+### aqua20 / dinov2_small
+
+  budget=001
+    full_finetune      0.1901 ± 0.0555 [0.1530, 0.2372]
+    last_block_ft      0.1466 ± 0.0431 [0.1175, 0.1832]
+    linear_probe       0.0564 ± 0.0359 [0.0326, 0.0888]
+    marine_adapter     0.0802 ± 0.0242 [0.0632, 0.0994]
+    mlp_head           0.1248 ± 0.0185 [0.1101, 0.1384]
+
+  budget=005
+    full_finetune      0.3138 ± 0.1369 [0.1952, 0.4075]
+    last_block_ft      0.3862 ± 0.0231 [0.3707, 0.4050]
+    linear_probe       0.1341 ± 0.0596 [0.0946, 0.1859]
+    marine_adapter     0.1471 ± 0.0240 [0.1285, 0.1658]
+    mlp_head           0.2293 ± 0.0206 [0.2126, 0.2449]
+
+  budget=010
+    full_finetune      0.4080 ± 0.1642 [0.2607, 0.4855]
+    last_block_ft      0.5433 ± 0.0298 [0.5204, 0.5663]
+    linear_probe       0.2261 ± 0.0722 [0.1721, 0.2816]
+    marine_adapter     0.2411 ± 0.0237 [0.2238, 0.2613]
+    mlp_head           0.3936 ± 0.0126 [0.3848, 0.4039]
+
+  budget=100
+    full_finetune      0.8362 ± 0.0193 [0.8212, 0.8511]
+    last_block_ft      0.8766 ± 0.0203 [0.8597, 0.8900]
+    linear_probe       0.8121 ± 0.0112 [0.8039, 0.8213]
+    marine_adapter     0.8342 ± 0.0151 [0.8254, 0.8481]
+    mlp_head           0.8531 ± 0.0183 [0.8368, 0.8646]
+
+### aqua20 / resnet18
+
+  budget=001
+    full_finetune      0.0739 ± 0.0141 [0.0641, 0.0854]
+    last_block_ft      0.0674 ± 0.0121 [0.0584, 0.0776]
+    linear_probe       0.0337 ± 0.0105 [0.0244, 0.0398]
+    marine_adapter     0.0562 ± 0.0201 [0.0452, 0.0745]
+    mlp_head           0.0533 ± 0.0098 [0.0463, 0.0617]
+
+  budget=005
+    full_finetune      0.1085 ± 0.0054 [0.1044, 0.1126]
+    last_block_ft      0.1041 ± 0.0079 [0.0982, 0.1101]
+    linear_probe       0.0450 ± 0.0089 [0.0385, 0.0527]
+    marine_adapter     0.0797 ± 0.0103 [0.0722, 0.0884]
+    mlp_head           0.1029 ± 0.0052 [0.0995, 0.1074]
+
+  budget=010
+    full_finetune      0.1722 ± 0.0175 [0.1591, 0.1855]
+    last_block_ft      0.1500 ± 0.0086 [0.1445, 0.1573]
+    linear_probe       0.0544 ± 0.0088 [0.0475, 0.0613]
+    marine_adapter     0.1162 ± 0.0180 [0.1036, 0.1322]
+    mlp_head           0.1856 ± 0.0238 [0.1668, 0.2035]
+
+  budget=100
+    full_finetune      0.6433 ± 0.0147 [0.6309, 0.6540]
+    last_block_ft      0.6261 ± 0.0089 [0.6190, 0.6332]
+    linear_probe       0.4253 ± 0.0178 [0.4114, 0.4392]
+    marine_adapter     0.6446 ± 0.0146 [0.6324, 0.6551]
+    mlp_head           0.6514 ± 0.0157 [0.6390, 0.6629]
+
+### fathomnet / dinov2_small
+
+  budget=001
+    full_finetune      0.1246 ± 0.0238 [0.1098, 0.1458]
+    last_block_ft      0.0626 ± 0.0149 [0.0519, 0.0754]
+    linear_probe       0.0247 ± 0.0053 [0.0206, 0.0288]
+    marine_adapter     0.0314 ± 0.0066 [0.0261, 0.0364]
+    mlp_head           0.0631 ± 0.0106 [0.0557, 0.0721]
+
+  budget=005
+    full_finetune      0.4118 ± 0.0366 [0.3826, 0.4410]
+    last_block_ft      0.3070 ± 0.0211 [0.2923, 0.3245]
+    linear_probe       0.1289 ± 0.0119 [0.1192, 0.1383]
+    marine_adapter     0.1889 ± 0.0197 [0.1739, 0.2046]
+    mlp_head           0.2569 ± 0.0171 [0.2436, 0.2703]
+
+  budget=010
+    full_finetune      0.5731 ± 0.0224 [0.5546, 0.5911]
+    last_block_ft      0.4670 ± 0.0098 [0.4595, 0.4752]
+    linear_probe       0.2824 ± 0.0120 [0.2733, 0.2916]
+    marine_adapter     0.3483 ± 0.0207 [0.3328, 0.3649]
+    mlp_head           0.4010 ± 0.0128 [0.3944, 0.4124]
+
+  budget=100
+    full_finetune      0.8098 ± 0.0046 [0.8057, 0.8129]
+    last_block_ft      0.7293 ± 0.0057 [0.7250, 0.7340]
+    linear_probe       0.6385 ± 0.0041 [0.6354, 0.6418]
+    marine_adapter     0.6663 ± 0.0021 [0.6647, 0.6680]
+    mlp_head           0.6677 ± 0.0038 [0.6642, 0.6702]
+
+### fathomnet / resnet18
+
+  budget=001
+    full_finetune      0.0314 ± 0.0049 [0.0276, 0.0352]
+    last_block_ft      0.0357 ± 0.0069 [0.0314, 0.0420]
+    linear_probe       0.0119 ± 0.0028 [0.0097, 0.0140]
+    marine_adapter     0.0283 ± 0.0027 [0.0261, 0.0303]
+    mlp_head           0.0401 ± 0.0043 [0.0365, 0.0432]
+
+  budget=005
+    full_finetune      0.1551 ± 0.0106 [0.1469, 0.1631]
+    last_block_ft      0.1778 ± 0.0094 [0.1705, 0.1851]
+    linear_probe       0.0588 ± 0.0093 [0.0518, 0.0666]
+    marine_adapter     0.1274 ± 0.0094 [0.1205, 0.1354]
+    mlp_head           0.1603 ± 0.0045 [0.1570, 0.1639]
+
+  budget=010
+    full_finetune      0.2738 ± 0.0127 [0.2639, 0.2837]
+    last_block_ft      0.3031 ± 0.0072 [0.2971, 0.3084]
+    linear_probe       0.1479 ± 0.0071 [0.1418, 0.1531]
+    marine_adapter     0.2329 ± 0.0106 [0.2249, 0.2408]
+    mlp_head           0.2710 ± 0.0077 [0.2650, 0.2770]
+
+  budget=100
+    full_finetune      0.6897 ± 0.0026 [0.6880, 0.6920]
+    last_block_ft      0.6433 ± 0.0053 [0.6393, 0.6477]
+    linear_probe       0.4180 ± 0.0022 [0.4163, 0.4197]
+    marine_adapter     0.5173 ± 0.0031 [0.5147, 0.5194]
+    mlp_head           0.5216 ± 0.0027 [0.5196, 0.5238]
+
+==========================================================================================
+PRIMARY PAIRED COMPARISONS — MACRO-F1
+==========================================================================================
+
+### Adapter - Linear
+aqua20     dinov2_small  b=001  Δ=+0.0238 [-0.0054,+0.0498]  W/T/L=4/0/1  dz=0.70  p=0.1875
+aqua20     dinov2_small  b=005  Δ=+0.0130 [-0.0288,+0.0513]  W/T/L=3/0/2  dz=0.25  p=0.5625
+aqua20     dinov2_small  b=010  Δ=+0.0150 [-0.0360,+0.0660]  W/T/L=2/0/3  dz=0.22  p=0.6250
+aqua20     dinov2_small  b=100  Δ=+0.0221 [+0.0052,+0.0391]  W/T/L=4/0/1  dz=0.97  p=0.1250
+aqua20     resnet18      b=001  Δ=+0.0224 [+0.0072,+0.0494]  W/T/L=5/0/0  dz=0.74  p=0.0625
+aqua20     resnet18      b=005  Δ=+0.0346 [+0.0232,+0.0440]  W/T/L=5/0/0  dz=2.45  p=0.0625
+aqua20     resnet18      b=010  Δ=+0.0618 [+0.0446,+0.0791]  W/T/L=5/0/0  dz=2.83  p=0.0625
+aqua20     resnet18      b=100  Δ=+0.2193 [+0.2059,+0.2324]  W/T/L=5/0/0  dz=12.37  p=0.0625
+fathomnet  dinov2_small  b=001  Δ=+0.0067 [-0.0011,+0.0146]  W/T/L=4/0/1  dz=0.65  p=0.3125
+fathomnet  dinov2_small  b=005  Δ=+0.0600 [+0.0457,+0.0767]  W/T/L=5/0/0  dz=3.06  p=0.0625
+fathomnet  dinov2_small  b=010  Δ=+0.0659 [+0.0476,+0.0867]  W/T/L=5/0/0  dz=2.65  p=0.0625
+fathomnet  dinov2_small  b=100  Δ=+0.0278 [+0.0252,+0.0306]  W/T/L=5/0/0  dz=7.97  p=0.0625
+fathomnet  resnet18      b=001  Δ=+0.0164 [+0.0142,+0.0187]  W/T/L=5/0/0  dz=5.64  p=0.0625
+fathomnet  resnet18      b=005  Δ=+0.0686 [+0.0599,+0.0820]  W/T/L=5/0/0  dz=4.62  p=0.0625
+fathomnet  resnet18      b=010  Δ=+0.0849 [+0.0739,+0.0959]  W/T/L=5/0/0  dz=5.79  p=0.0625
+fathomnet  resnet18      b=100  Δ=+0.0993 [+0.0965,+0.1023]  W/T/L=5/0/0  dz=26.66  p=0.0625
+
+### Adapter - MLP
+aqua20     dinov2_small  b=001  Δ=-0.0446 [-0.0655,-0.0246]  W/T/L=0/0/5  dz=-1.69  p=0.0625
+aqua20     dinov2_small  b=005  Δ=-0.0821 [-0.0950,-0.0693]  W/T/L=0/0/5  dz=-4.95  p=0.0625
+aqua20     dinov2_small  b=010  Δ=-0.1525 [-0.1611,-0.1434]  W/T/L=0/0/5  dz=-13.00  p=0.0625
+aqua20     dinov2_small  b=100  Δ=-0.0189 [-0.0393,+0.0016]  W/T/L=2/0/3  dz=-0.69  p=0.2500
+aqua20     resnet18      b=001  Δ=+0.0028 [-0.0071,+0.0149]  W/T/L=3/0/2  dz=0.20  p=0.6875
+aqua20     resnet18      b=005  Δ=-0.0232 [-0.0331,-0.0133]  W/T/L=0/0/5  dz=-1.83  p=0.0625
+aqua20     resnet18      b=010  Δ=-0.0694 [-0.0919,-0.0506]  W/T/L=0/0/5  dz=-2.64  p=0.0625
+aqua20     resnet18      b=100  Δ=-0.0068 [-0.0164,+0.0058]  W/T/L=1/0/4  dz=-0.47  p=0.3750
+fathomnet  dinov2_small  b=001  Δ=-0.0317 [-0.0405,-0.0228]  W/T/L=0/0/5  dz=-2.76  p=0.0625
+fathomnet  dinov2_small  b=005  Δ=-0.0680 [-0.0768,-0.0587]  W/T/L=0/0/5  dz=-5.72  p=0.0625
+fathomnet  dinov2_small  b=010  Δ=-0.0527 [-0.0642,-0.0387]  W/T/L=0/0/5  dz=-3.32  p=0.0625
+fathomnet  dinov2_small  b=100  Δ=-0.0014 [-0.0041,+0.0016]  W/T/L=1/0/4  dz=-0.40  p=0.4375
+fathomnet  resnet18      b=001  Δ=-0.0117 [-0.0139,-0.0092]  W/T/L=0/0/5  dz=-3.88  p=0.0625
+fathomnet  resnet18      b=005  Δ=-0.0329 [-0.0428,-0.0214]  W/T/L=0/0/5  dz=-2.41  p=0.0625
+fathomnet  resnet18      b=010  Δ=-0.0382 [-0.0487,-0.0294]  W/T/L=0/0/5  dz=-3.05  p=0.0625
+fathomnet  resnet18      b=100  Δ=-0.0043 [-0.0090,-0.0005]  W/T/L=1/0/4  dz=-0.79  p=0.1250
+
+==========================================================================================
+CROSS-CONDITION ROBUSTNESS
+==========================================================================================
+           contrast  n_conditions  mean_delta  median_delta   ci_low  ci_high  wins  ties  losses  p_exact_signflip  p_holm
+   Adapter - Linear            16     0.05261       0.03121  0.03124  0.08038    16     0       0           0.00003 0.00015
+      Adapter - MLP            16    -0.03973      -0.03230 -0.06014 -0.02271     1     0      15           0.00009 0.00027
+LastBlock - Adapter            16     0.08039       0.05673  0.04378  0.12457    15     0       1           0.00012 0.00027
+   FullFT - Adapter            16     0.09222       0.07458  0.05464  0.13108    15     0       1           0.00006 0.00024
+ FullFT - LastBlock            16     0.01183       0.01188 -0.01944  0.04159    10     0       6           0.47104 0.47104
+
+==========================================================================================
+SCRATCH CNN
+==========================================================================================
+rows: 40
+  dataset budget  n  test_macro_f1_mean  test_macro_f1_sd  test_accuracy_mean
+   aqua20    001  5              0.0305            0.0132              0.1427
+   aqua20    005  5              0.0778            0.0095              0.3411
+   aqua20    010  5              0.0964            0.0132              0.3957
+   aqua20    100  5              0.1524            0.0046              0.4843
+fathomnet    001  5              0.0133            0.0048              0.0251
+fathomnet    005  5              0.0704            0.0039              0.1071
+fathomnet    010  5              0.0965            0.0069              0.1409
+fathomnet    100  5              0.2190            0.0069              0.2589
+
+==========================================================================================
+WIDTH ABLATION
+==========================================================================================
+additional width rows: 20
+ adapter_dim budget  n  test_macro_f1_mean  test_macro_f1_sd
+          64    010  5              0.2039            0.0161
+         128    010  5              0.2329            0.0106
+         256    010  5              0.2715            0.0028
+          64    100  5              0.5051            0.0067
+         128    100  5              0.5173            0.0031
+         256    100  5              0.5298            0.0046
+
+==========================================================================================
+SPLIT SENSITIVITY
+==========================================================================================
+rows: 54
+grouping: ['split_seed', 'method', 'budget']
+ split_seed         method budget  n  test_macro_f1_mean  test_macro_f1_sd
+   123.0000  full_finetune    010  3              0.2845            0.0055
+   123.0000  full_finetune    100  3              0.6975            0.0035
+   123.0000   linear_probe    010  3              0.1566            0.0183
+   123.0000   linear_probe    100  3              0.4324            0.0074
+   123.0000 marine_adapter    010  3              0.2396            0.0027
+   123.0000 marine_adapter    100  3              0.5354            0.0048
+   456.0000  full_finetune    010  3              0.2637            0.0109
+   456.0000  full_finetune    100  3              0.6911            0.0110
+   456.0000   linear_probe    010  3              0.1460            0.0077
+   456.0000   linear_probe    100  3              0.4280            0.0107
+   456.0000 marine_adapter    010  3              0.2290            0.0114
+   456.0000 marine_adapter    100  3              0.5315            0.0028
+   789.0000  full_finetune    010  3              0.2572            0.0119
+   789.0000  full_finetune    100  3              0.6720            0.0057
+   789.0000   linear_probe    010  3              0.1531            0.0044
+   789.0000   linear_probe    100  3              0.4187            0.0027
+   789.0000 marine_adapter    010  3              0.2311            0.0155
+   789.0000 marine_adapter    100  3              0.5135            0.0034
+
+==========================================================================================
+CLASS-BALANCED K-SHOT
+==========================================================================================
+rows: 60
+budget         method  n  test_macro_f1_mean  test_macro_f1_sd  test_accuracy_mean  test_balanced_accuracy_mean
+shot01  full_finetune  3              0.0145            0.0044              0.0219                       0.0205
+shot01  last_block_ft  3              0.0172            0.0051              0.0260                       0.0255
+shot01   linear_probe  3              0.0091            0.0009              0.0217                       0.0202
+shot01 marine_adapter  3              0.0130            0.0035              0.0197                       0.0209
+shot01       mlp_head  3              0.0232            0.0011              0.0316                       0.0317
+shot02  full_finetune  3              0.0246            0.0033              0.0324                       0.0317
+shot02  last_block_ft  3              0.0276            0.0020              0.0353                       0.0372
+shot02   linear_probe  3              0.0103            0.0016              0.0220                       0.0210
+shot02 marine_adapter  3              0.0203            0.0019              0.0274                       0.0286
+shot02       mlp_head  3              0.0336            0.0047              0.0479                       0.0459
+shot05  full_finetune  3              0.0561            0.0023              0.0757                       0.0673
+shot05  last_block_ft  3              0.0651            0.0018              0.0772                       0.0762
+shot05   linear_probe  3              0.0244            0.0011              0.0389                       0.0375
+shot05 marine_adapter  3              0.0474            0.0024              0.0558                       0.0556
+shot05       mlp_head  3              0.0661            0.0043              0.0905                       0.0896
+shot10  full_finetune  3              0.1516            0.0097              0.1869                       0.1780
+shot10  last_block_ft  3              0.1754            0.0150              0.1963                       0.1967
+shot10   linear_probe  3              0.0596            0.0042              0.0767                       0.0768
+shot10 marine_adapter  3              0.1194            0.0030              0.1404                       0.1398
+shot10       mlp_head  3              0.1538            0.0101              0.1845                       0.1794
+
+==========================================================================================
+TRAINABLE PARAMETERS
+==========================================================================================
+    backbone         method  trainable_params
+dinov2_small  full_finetune        22075633.5
+dinov2_small  last_block_ft         1795057.5
+dinov2_small   linear_probe           19057.5
+dinov2_small marine_adapter          118641.5
+dinov2_small       mlp_head          118641.5
+    resnet18  full_finetune        11201905.5
+    resnet18  last_block_ft         8419121.5
+    resnet18   linear_probe           25393.5
+    resnet18 marine_adapter          158129.5
+    resnet18       mlp_head          158129.5
+
+==========================================================================================
+DONE
+==========================================================================================
+Output directory: MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/all_scientific_runs.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/core_paired_statistics.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/core_summary.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/cross_condition_statistics.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/scratch_summary.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/sensitivity_summary.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/shots_summary.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/trainable_parameters.csv
+  MARINE_EXPERIMENTS_V2/FULL_SUITE/STATS/width_summary_with_r128.csv

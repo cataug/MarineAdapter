@@ -1,0 +1,17 @@
+WROTE FIGURES TO: /home/tahiti/MARINE_DATASETS/MARINE_EXPERIMENTS_V2/FULL_SUITE/FIGURES_NEW
+01_core_macro_f1_grid.pdf
+01_core_macro_f1_grid.png
+02_adapter_minus_linear_forest.pdf
+02_adapter_minus_linear_forest.png
+03_adapter_minus_mlp_forest.pdf
+03_adapter_minus_mlp_forest.png
+04_width_ablation.pdf
+04_width_ablation.png
+05_split_sensitivity.pdf
+05_split_sensitivity.png
+06_kshot.pdf
+06_kshot.png
+07_scratch_vs_linear_adapter_mlp.pdf
+07_scratch_vs_linear_adapter_mlp.png
+08_trainable_params_bar.pdf
+08_trainable_params_bar.png
